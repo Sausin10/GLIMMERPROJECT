@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<title>Glimmer Lightings</title>
+<META charset="UTF-8">
+<META name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<META NAME='rating' CONTENT='General' />
+<META NAME='expires' CONTENT='never' />
+<META NAME='language' CONTENT='English, EN' />
+<META name="description" content="shopping cart ">
+<META name="keywords" content="SHOPPING CART">
+<script src="Storage.js"></script>
+ <link rel = "icon" href = 
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgzZwGYqmvnVaXhbfLhXqEWSoktP2fPXb08UZxVC1jmw&s"  type = "image/x-icon">
+<link rel="stylesheet" href="StorageStyle.css">
+
+</head>
+
+
+<body onload="doShowAll()">
+	<div class="logo">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgzZwGYqmvnVaXhbfLhXqEWSoktP2fPXb08UZxVC1jmw&s" alt="logo" href="#home">
+    <h2>Glimmer Lightings</h2>
+	</div>
+	<background-image=url('"C:\xampp\htdocs\testsite\Logo.jpg"')>
+	
+	
+	<hr>
+	<nav class="navbar">
+		<a class="active" href="index.html#home">home</a>
+	</nav>
+	<h3>Shopping Wishlist</h3>
+	<p>Insert items and their quantity for your shopping cart wishlist. </p>
+	<form name=ShoppingList>
+
+		<div id="main">
+			<table>
+				<tr>
+
+					<td><b>Item:</b><input type=text name=name></td>
+					<td><b>Quantity:</b><input type=text name=data></td>
+
+				</tr>
+
+				<tr>
+					<td>
+					    <input type=button value="Save"   onclick="SaveItem()"> 
+					    <input type=button value="Update" onclick="ModifyItem()"> 
+					    <input type=button value="Delete" onclick="RemoveItem()">
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="items_table">
+			<h3>Shopping WishList</h3>
+			<table id=list></table>
+			<p>
+				<label><input type=button value="Clear" onclick="ClearAll()">
+					<i>* Delete all items</i></label>
+			</p>
+		</div>
+	</form>
+
+</body>
+</html>
